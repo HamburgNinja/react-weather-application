@@ -22,7 +22,13 @@ export default function Weather() {
       <h1>Hamburg, DE</h1>
       <p className="current-date">Sunday | 14:00</p>
       <div className="row">
-        <div className="col-2 current-weather-icon">🌤</div>
+        <div className="col-2">
+          <img
+            src="https://freesvg.org/img/weather-few-clouds.png"
+            alt=""
+            className="current-weather-icon"
+          />
+        </div>
         <div className="col-3">
           <span className="current-temp">17</span>
           <span className="unit">°C</span>
