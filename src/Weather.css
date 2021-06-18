@@ -1,8 +1,42 @@
 .Weather {
   border: 1px solid #5f9ea0;
   border-radius: 4px;
+  padding: 30px 20px 20px;
+  margin: 20px 0 5px 0;
 }
 
 .Weather h1 {
   font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  padding: 20px 0 0;
+  color: #5f9ea0;
+}
+
+.Weather hr {
+  color: #5f9ea0;
+}
+
+.Weather .submit-btn {
+  color: #fff;
+  background: #5f9ea0;
+}
+
+.Weather .current-date {
+  font-size: 20px;
+}
+
+.current-weather-icon {
+  font-size: 70px;
+}
+
+.Weather .current-temp {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.Weather .current-weather-description {
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 20px;
 }
