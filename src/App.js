@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
+        <Weather defaultCity="Hamburg" />
         <footer>
           <a
             href="https://github.com/HamburgNinja/react-weather-application"
