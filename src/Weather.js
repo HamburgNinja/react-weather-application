@@ -29,16 +29,16 @@ export default function Weather() {
             className="current-weather-icon"
           />
         </div>
-        <div className="col-3">
+        <div className="col-3 text-center">
           <span className="current-temp">17</span>
           <span className="unit">°C</span>
         </div>
         <div className="col-7 current-weather-description">partly cloudy</div>
       </div>
       <div className="row weather-details">
-        <div className="col-4">Feels Like 16°C</div>
-        <div className="col-4">Humidity 50%</div>
-        <div className="col-4">Wind 64km/h</div>
+        <div className="col-4 text-center">Feels Like 16°C</div>
+        <div className="col-4 text-center">Humidity 50%</div>
+        <div className="col-4 text-center">Wind 64km/h</div>
       </div>
     </div>
   );
