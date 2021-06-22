@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DateInfo from "./DateInfo";
 import axios from "axios";
 
 import "./Weather.css";
@@ -10,6 +11,7 @@ export default function Weather(props) {
     setWeatherData({
       loaded: true,
       city: response.data.name,
+      date: new Date(response.data.dt * 1000),
       icon: response.data.weather[0].icon,
       temp: response.data.main.temp,
       description: response.data.weather[0].description,
@@ -38,7 +40,9 @@ export default function Weather(props) {
           </div>
         </form>
         <h1>{weatherData.city}</h1>
-        <p className="current-date">Sunday | 14:00</p>
+        <div className="current-date">
+          <DateInfo date={weatherData.date} />
+        </div>
         <div className="row">
           <div className="col-2">
             <img
@@ -63,7 +67,7 @@ export default function Weather(props) {
             Humidity: {weatherData.humidity}%
           </div>
           <div className="col-4 text-center">
-            Wind: {Math.round(weatherData.wind)}km/h
+            Wind: {Math.round(weatherData.wind)} km/h
           </div>
         </div>
       </div>
