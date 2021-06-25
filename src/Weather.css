@@ -28,7 +28,7 @@
 
 .Weather .current-weather-icon {
   padding-left: 30px;
-  width: 90px;
+  margin-top: 5px;
 }
 
 .Weather .current-temp {
