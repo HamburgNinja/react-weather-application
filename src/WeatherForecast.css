@@ -10,6 +10,7 @@ span {
 
 .weather-forecast-day {
   font-size: 18px;
+  font-weight: 600;
 }
 .weather-forecast-temp-min {
   opacity: 0.6;
