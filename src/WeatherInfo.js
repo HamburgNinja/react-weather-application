@@ -11,7 +11,7 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-2">
           <img
-            src="https://freesvg.org/img/weather-few-clouds.png"
+            src={props.data.icon}
             alt={props.data.description}
             className="current-weather-icon"
           />
