@@ -1,0 +1,16 @@
+ul {
+  list-style: none;
+  display: block;
+  text-align: center;
+}
+
+span {
+  font-size: 20px;
+}
+
+.weather-forecast-day {
+  font-size: 18px;
+}
+.weather-forecast-temp-min {
+  opacity: 0.6;
+}

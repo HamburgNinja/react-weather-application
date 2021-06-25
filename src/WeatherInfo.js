@@ -1,6 +1,7 @@
 import React from "react";
 import DateInfo from "./DateInfo";
 import WeatherIcon from "./WeatherIcon";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherInfo(props) {
   return (
@@ -12,7 +13,7 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-2">
           <div className="current-weather-icon">
-            <WeatherIcon code={props.data.icon} />
+            <WeatherIcon code={props.data.icon} size={57} />
           </div>
         </div>
         <div className="col-3 text-center">
@@ -34,6 +35,7 @@ export default function WeatherInfo(props) {
           Wind: {Math.round(props.data.wind)} km/h
         </div>
       </div>
+      <WeatherForecast />
     </div>
   );
 }
