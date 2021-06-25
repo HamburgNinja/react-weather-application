@@ -23,10 +23,20 @@ export default function WeatherIcon(props) {
     "50n": "FOG",
   };
 
+  const iconName = iconElements[props.code];
+  let color = "#99A8B2";
+
+  if (iconName === "CLEAR_DAY" || iconName === "PARTLY_CLOUDY_DAY") {
+    color = "#FEA82F";
+  } else if (iconName === "RAIN") {
+    color = "#00587A";
+  } else if (iconName === "CLEAR_NIGHT" || iconName === "PARTLY_CLOUDY_NIGHT") {
+    color = "#424642";
+  }
   return (
     <ReactAnimatedWeather
-      icon={iconElements[props.code]}
-      color="#5f9ea0"
+      icon={iconName}
+      color={color}
       size={55}
       animate={true}
     />
