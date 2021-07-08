@@ -1,0 +1,37 @@
+.weatherInfo {
+  padding: 0;
+  margin: 0;
+}
+.current-date {
+  padding: 0 0 10px 30px;
+  font-size: 20px;
+}
+
+.current-weather-icon {
+  padding-left: 30px;
+  margin-top: 5px;
+}
+
+.current-temp {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.unit {
+  top: -15px;
+  position: relative;
+  font-size: 18px;
+}
+
+.current-weather-description {
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 13px;
+}
+
+.weather-details {
+  margin: 15px 0 30px 0;
+  padding: 6px 0;
+  color: #fff;
+  background: #5f9ea0;
+}

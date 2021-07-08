@@ -1,11 +1,12 @@
-ul {
+span {
+  font-size: 18px;
+}
+
+.weather-forecast ul {
   list-style: none;
   display: block;
   text-align: center;
-}
-
-span {
-  font-size: 18px;
+  padding: 0;
 }
 
 .weather-forecast {

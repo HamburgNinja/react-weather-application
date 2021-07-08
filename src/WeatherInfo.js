@@ -1,10 +1,13 @@
 import React from "react";
 import DateInfo from "./DateInfo";
 import WeatherIcon from "./WeatherIcon";
+import "bootstrap/dist/css/bootstrap.css";
+
+import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
   return (
-    <div className="weatherInfo">
+    <div className="container weatherInfo">
       <h1>{props.data.city}</h1>
       <div className="current-date">
         <DateInfo date={props.data.date} />

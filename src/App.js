@@ -15,7 +15,14 @@ function App() {
           >
             open source code
           </a>{" "}
-          by HamburgNinja
+          by{" "}
+          <a
+            href="https://github.com/HamburgNinja"
+            target="_blank"
+            rel="noreferrer"
+          >
+            HamburgNinja
+          </a>
         </footer>
       </div>
     </div>
